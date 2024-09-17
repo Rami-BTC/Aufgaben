@@ -16,8 +16,9 @@ public class DecimalToBinary {
             result = resultModulo + result;
             decimal = decimal / 2;
 
-            System.out.print(result);
         }
+
+        System.out.print(result);
     }
 }
 
