@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class DecimalToBinary {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Gebe eine positive Ganze Zahl ein: ");
+        System.out.println("Gebe eine positive Ganze Zahl ein: ");
 
         int decimal = scanner.nextInt();
 
@@ -17,7 +17,6 @@ public class DecimalToBinary {
             decimal = decimal / 2;
 
         }
-
         System.out.print(result);
     }
 }
