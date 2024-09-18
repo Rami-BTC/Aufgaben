@@ -4,8 +4,14 @@ import java.util.Scanner;
 
 public class PiGenauigkeit {
     public static void main(String[] args) {
-        //WIP
+        //WIP 
 
+
+
+        //Ich weiß noch nicht wie ich es ohne IF-ELSE Statement machen soll, daher ist dies noch in Bearbeitung!!!
+
+
+    
         Scanner scanner = new Scanner(System.in);
 
         double num = 3;
