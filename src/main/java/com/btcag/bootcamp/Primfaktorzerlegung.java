@@ -22,7 +22,7 @@ public class Primfaktorzerlegung {
             while (isPrim) {
                 factor = factor + divider +  " " ;
                 num /= divider;
-                isPrim = (num % divider == 0);
+                isPrim = false;
             }
             divider++;
         }

@@ -36,7 +36,6 @@ public class Quersumme {
             currentIndex--;
             i += character - '0';
         }
-
         System.out.println("Die Quersumme ist: " + i);
     }
 }

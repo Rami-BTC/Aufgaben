@@ -15,6 +15,7 @@ public class PiGenauigkeit {
         int integerInput = scanner.nextInt();
 
         int n = 1;
+
         while (n < integerInput) {
             //Formel 4 * (1 - 1/3 + 1/5 - 1/7))
 

@@ -11,8 +11,6 @@ public class Geometrie {
         int radius = sc.nextInt();
 
         //--------
-        double area = Math.PI * Math.pow(radius, 2);    //Kein Ahnung ob wir das so machen dürfen.
-        //oder in einfach:
         double areaEasy = 3.14 * radius*radius;
         //--------
 

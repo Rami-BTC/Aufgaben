@@ -20,4 +20,3 @@ public class DecimalToBinary {
         System.out.print(result);
     }
 }
-
