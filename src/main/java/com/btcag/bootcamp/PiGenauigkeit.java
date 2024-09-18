@@ -4,14 +4,8 @@ import java.util.Scanner;
 
 public class PiGenauigkeit {
     public static void main(String[] args) {
-        //WIP 
+        //WIP
 
-
-
-        //Ich weiß noch nicht wie ich es ohne IF-ELSE Statement machen soll, daher ist dies noch in Bearbeitung!!!
-
-
-    
         Scanner scanner = new Scanner(System.in);
 
         double num = 3;
@@ -21,6 +15,7 @@ public class PiGenauigkeit {
         int integerInput = scanner.nextInt();
 
         int n = 1;
+
         while (n < integerInput) {
             //Formel 4 * (1 - 1/3 + 1/5 - 1/7))
 
