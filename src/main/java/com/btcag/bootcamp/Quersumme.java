@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class Quersumme {
     public static void main(String[] args) {
-
-        //Dieses Projekt ist im WIP!
-
         Scanner scanner = new Scanner(System.in);
 
         //Long
