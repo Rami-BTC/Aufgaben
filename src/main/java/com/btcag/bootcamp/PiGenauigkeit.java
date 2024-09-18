@@ -9,16 +9,23 @@ public class PiGenauigkeit {
         Scanner scanner = new Scanner(System.in);
 
         double num = 3;
-        double result = 0;
+        double result = 1;
 
         System.out.println("Wie viele Iterationen sollen gemacht werden um Pi zu berechnen?");
         int integerInput = scanner.nextInt();
 
-        while (integerInput > 0) {
-            integerInput--;
+        int n = 1;
+        while (n < integerInput) {
+            //Formel 4 * (1 - 1/3 + 1/5 - 1/7))
 
-            result = result + 1/num;
+            if (n % 2 == 0){
+                result = result + 1/num;
+            }
+            else{
+                result = result - 1/num;
+            }
             num += 2;
+            n++;
         }
 
         result *= 4;
