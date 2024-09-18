@@ -8,13 +8,13 @@ public class rueckwaertsAusgeben {
 
         //String
         System.out.println("Bitte Zahl eingeben (String): ");
-        String input = scanner.nextLine();
+        String stringInput = scanner.nextLine();
 
-        int currentIndex = input.length();
+        int currentIndex = stringInput.length();
         String result = "";
 
         while (currentIndex > 0) {
-            result = result + input.charAt(currentIndex -1);
+            result = result + stringInput.charAt(currentIndex -1);
             currentIndex--;
         }
 
@@ -22,12 +22,12 @@ public class rueckwaertsAusgeben {
 
         //Long
         System.out.println("Bitte Zahl eingeben (Long): ");
-        long input2 = scanner.nextLong();
+        long longInput = scanner.nextLong();
         long reverse = 0;
 
-        while (input2 > 0) {
-            reverse = reverse * 10 + (input2 % 10);
-            input2 /= 10;
+        while (longInput > 0) {
+            reverse = reverse * 10 + (longInput % 10);
+            longInput /= 10;
         }
 
         System.out.println(reverse + "\n");
