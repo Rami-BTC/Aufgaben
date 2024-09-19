@@ -10,11 +10,11 @@ public class rueckwaertsAusgeben {
         System.out.println("Bitte Zahl eingeben (String): ");
         String stringInput = scanner.nextLine();
 
-        int currentIndex = stringInput.length();
+        int currentIndex = stringInput.length();        //Index fängt hinten an
         String result = "";
 
-        while (currentIndex > 0) {
-            result = result + stringInput.charAt(currentIndex -1);
+        while (currentIndex > 0) {      //Solange bis alle Character durch sind (von hinten).
+            result = result + stringInput.charAt(currentIndex -1);      //Character von hinten wird gespeichert
             currentIndex--;
         }
 
@@ -26,8 +26,8 @@ public class rueckwaertsAusgeben {
         long reverse = 0;
 
         while (longInput > 0) {
-            reverse = reverse * 10 + (longInput % 10);
-            longInput /= 10;
+            reverse = reverse * 10 + (longInput % 10);  //Rest, z.B bei 123 ist 12.3 (hinterste Zahl). X * 10, also z.B "30", damit am Ende 30 + X (z.B 30 + 5 = 35)
+            longInput /= 10;    //longInput / 10, damit von z.B 123 auf 12. Rest fällt weg, weil long
         }
 
         System.out.println(reverse + "\n");

@@ -11,7 +11,7 @@ public class Geometrie {
         int radius = sc.nextInt();
 
         //--------
-        double areaEasy = 3.14 * radius*radius;
+        double areaEasy = 3.14 * radius*radius;     //Formel für den Radius: PI * radius^2
         //--------
 
         System.out.println("Der Flächeninhalt des Kreises beträgt: " + areaEasy + " Quadratkartoffeln \n");
@@ -26,7 +26,7 @@ public class Geometrie {
         int width = sc2.nextInt();
 
         //--------
-        int areaRec = length * width;
+        int areaRec = length * width;               //Formel für den Flächeninhalt: länge * breite
         //--------
 
         System.out.println("Der Flächeninhalt des Rechteckes beträgt: " + areaRec + " Quadratkartoffeln \n");

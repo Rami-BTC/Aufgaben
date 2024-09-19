@@ -12,13 +12,13 @@ public class Divisionscheck {
         System.out.println("Bis zu welcher Zahl?");
         int max = sc.nextInt();
 
-        int i = 0;
-        while (i < max){
-            int mod = i % divisor;
+        int i = 0;                      //i = iterator
+        while (i < max){                //Solange bis die maximale Zahl erreicht wurde
+            int mod = i % divisor;      //Jede Zahl bis "max" wird dividiert durch divisor, Rest wird gespeichert
 
-            while (mod == 0){
+            while (mod == 0){           //wenn kein Rest vorhanden, dann Zahl ausgeben, da Teilbar
                 System.out.println(i);
-                mod = 1;
+                mod = 1;                //While-Schleife verlassen...
             }
             i++;
         }

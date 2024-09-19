@@ -12,12 +12,11 @@ public class Quersumme {
         long num = 0;
         long result = 0;
 
-        while (longInput > 0) {
-            num = longInput % 10;
-            longInput /= 10;
+        while (longInput > 0) {         //Solange bis longInput = 0 ist
+            num = longInput % 10;       //Letzte Zahl wird gespeichert, also bei 1234 = 123,4 <--
+            longInput /= 10;            //longInput wird durch 10 gerechnet, also von 1234 auf 123
 
-            result += num;
-            num = 0;
+            result += num;              //Letzte Zahl von 1234 (4), wird verrechnet
         }
         System.out.println("Die Quersumme ist: " + result);
 
@@ -32,9 +31,9 @@ public class Quersumme {
         int i = 0;
         while (currentIndex > 0) {
 
-            character = stringInput.charAt(currentIndex -1);
+            character = stringInput.charAt(currentIndex -1);    //Letzte Zahl wird genommen (als char)
             currentIndex--;
-            i += character - '0';
+            i += character - '0';   //Char wird als ASCII verrechnet, durch '0' wird der Wert und nicht das ASCII (wie z.B 57) benutzt.
         }
         System.out.println("Die Quersumme ist: " + i);
     }

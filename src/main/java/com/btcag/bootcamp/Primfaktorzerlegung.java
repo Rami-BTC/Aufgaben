@@ -14,15 +14,15 @@ public class Primfaktorzerlegung {
         String factor = "";
         boolean isPrim;
 
-        while (divider <= num) {
-            long result = num % divider;
+        while (divider <= num) {            //Solange, bis divider gleich Zahl ist. Also von 2 Rauf
+            long result = num % divider;    //Rest wird gepseichert
 
-            isPrim = result == 0;
+            isPrim = result == 0;           //Wenn kein Rest: dann Primzahl
 
-            while (isPrim) {
-                factor = factor + divider +  " " ;
-                num /= divider;
-                isPrim = false;
+            while (isPrim) {                //Solange, bis Primzahl false ist.
+                factor = factor + divider +  " " ;      //Primzahl wird zum String geschrieben
+                num /= divider;                         //Da z.B 2 % 12 teilbar ist, wird anschließend auch 2/12 gerechnet
+                isPrim = false;                         //While-Schleife verlassen...
             }
             divider++;
         }
