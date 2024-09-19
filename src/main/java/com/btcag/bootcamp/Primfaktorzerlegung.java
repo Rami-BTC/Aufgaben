@@ -8,7 +8,7 @@ public class Primfaktorzerlegung {
         System.out.println("Bitte Zahl für den Primetest eingeben (long): ");
 
         long num = scanner.nextLong();
-        long num1 = num;
+        long initialNum = num;
         long divider = 2;
 
         String factor = "";
@@ -26,6 +26,6 @@ public class Primfaktorzerlegung {
             }
             divider++;
         }
-        System.out.println("Die Zahl " + num1 + " kann in folgende Faktoren zerlegt werden: "+ factor);
+        System.out.println("Die Zahl " + initialNum + " kann in folgende Faktoren zerlegt werden: "+ factor);
     }
 }

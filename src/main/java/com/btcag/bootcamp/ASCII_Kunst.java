@@ -8,22 +8,33 @@ public class ASCII_Kunst {
         //Würfel--------------
         Scanner sc = new Scanner(System.in);
         System.out.println("Groeße des Vierecks: ");
-        int size = sc.nextInt();
-        int row = size;
+        int sizeRec = sc.nextInt();
+        int rowRec = sizeRec;
 
-        while (row > 0 ) {
-            int tmp = size;
+        while (rowRec > 0 ) {
+            int tmp = sizeRec;
             while (tmp > 0) {
                 System.out.print("*");
                 tmp--;
             }
             System.out.println();
-            row--;
+            rowRec--;
         }
 
         //Dreieck--------------
         Scanner sc2 = new Scanner(System.in);
         System.out.println("Groeße des Dreiecks: ");
+        int sizeTri = sc2.nextInt();
+        int rowTri = 1;
 
+        while (rowTri <= sizeTri) {
+            int tmp = 0;
+            while (tmp < rowTri) {
+                System.out.print("*");
+                tmp++;
+            }
+            System.out.println();
+            rowTri++;
+        }
     }
 }
